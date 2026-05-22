@@ -94,7 +94,7 @@ interface EnhancedTableProps {
 }
 
 function EnhancedTableHead(props: EnhancedTableProps) {
-    const { onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort } = props;
+    const { order, orderBy, onRequestSort } = props;
 
     const createSortHandler =
         (property: keyof Data) => (event: React.MouseEvent<unknown>) => {

@@ -9,7 +9,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import Usertable from '../ui/usertable';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 /* ---------------- Styled Search ---------------- */
@@ -62,7 +61,7 @@ export default function UserContent() {
   const [open, setOpen] = React.useState(false);
 
   const handleTabChange = (
-    event: React.SyntheticEvent,
+    _event: React.SyntheticEvent,
     newValue: string
   ) => {
     setTabValue(newValue);
@@ -140,16 +139,16 @@ export default function UserContent() {
               <div className="col-lg-6">
                 <div className="form-group">
                   <label htmlFor="modalfield1">First Name</label>
-                 <input id='modalfield1' className='form-control' type="text" placeholder='Enter first name' />
+                  <input id='modalfield1' className='form-control' type="text" placeholder='Enter first name' />
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="form-group">
                   <label htmlFor="modalfield2">Last Name</label>
-                 <input id='modalfield2' className='form-control' type="text" placeholder='Enter last name' />
+                  <input id='modalfield2' className='form-control' type="text" placeholder='Enter last name' />
                 </div>
               </div>
-              
+
             </div>
           </div>
         </Box>

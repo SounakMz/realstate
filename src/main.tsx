@@ -9,6 +9,7 @@ ReactDOM.createRoot(
   <React.StrictMode>
     <BrowserRouter basename="/realstate">
       <App />
+      
     </BrowserRouter>
   </React.StrictMode>
 )
